@@ -87,7 +87,7 @@
     setTimeout(() => {
       document.getElementById("loading").classList.add("hidden-screen");
       document.getElementById("mainContent").classList.remove("hidden-screen");
-    }, 1000);
+    }, 1200);
 
     // Connect button logic
     document.getElementById("connectButton").addEventListener("click", () => {
@@ -104,7 +104,7 @@
 
       let progress = 0;
       const interval = setInterval(() => {
-        progress += Math.random() * 4;
+        progress += Math.random() * 6;
 
         if (progress >= 87) {
           progress = 87;
@@ -120,7 +120,7 @@
 
         progressBar.style.width = progress + "%";
         progressText.textContent = Math.floor(progress) + "%";
-      }, 300);
+      }, 220);
     });
   </script>
 </body>
